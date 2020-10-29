@@ -3,7 +3,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 var go;
-var log1, log2, log3;
+var bin;
 var paper;
 var paperIMG, dustbinIMG;
 
@@ -25,7 +25,6 @@ function setup() {
 
 	go = new ground(750, 680, 1500, 20, {isStatic:true});
 	bin = new Dustbin(1000, 500, 200, 200, {isStatic:true});
-	bin = addImage(dustbinIMG);
 	paper = new Paper(100, 200, 50);
 
 	Engine.run(engine);
@@ -39,9 +38,7 @@ function draw() {
 
   
   go.display();
-  log1.display();
-  log2.display();
-  log3.display();
+  bin.display();	
   paper.display();
 
 }

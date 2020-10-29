@@ -7,7 +7,7 @@ class Paper{
         friction:0.5,
         density:1
     }
-
+    this.image = loadImage("paper.png");
     this.body = Bodies.circle(x, y, radius/2, opitions);
     this.radius = radius;
     World.add(world,this.body)
