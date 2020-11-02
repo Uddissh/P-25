@@ -6,6 +6,7 @@ var go;
 var bin;
 var paper;
 var paperIMG, dustbinIMG;
+var log6, chain;
 
 function preload()
 {
@@ -24,8 +25,9 @@ function setup() {
 	//Create the Bodies Here.
 
 	go = new ground(750, 680, 1500, 20, {isStatic:true});
-	bin = new Dustbin(1000, 500, 200, 200, {isStatic:true});
-	paper = new Paper(100, 200, 50);
+	bin = new Dustbin(1200, 590, 200, 200, {isStatic:true});
+	paper = new Paper(100, 200, 50, "paper.png");
+	
 
 	Engine.run(engine);
   
@@ -34,7 +36,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background("yellow");
 
   
   go.display();

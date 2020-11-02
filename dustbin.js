@@ -16,8 +16,9 @@ class Dustbin {
 
   display(){
     var pos =this.body.position;
-    rectMode(CENTER);
-    fill("blue");
-    rect(pos.x, pos.y, this.width, this.height);
+    push();
+    imageMode(CENTER);
+    image(this.image, pos.x, pos.y, this.width, this.height);
+    pop();
   }
 };
