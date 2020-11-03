@@ -25,7 +25,7 @@ function setup() {
 	//Create the Bodies Here.
 
 	go = new ground(750, 680, 1500, 20, {isStatic:true});
-	bin = new Dustbin(1200, 590, 200, 200, {isStatic:true});
+	Emptybin = new Dustbin(1200, 590, {isStatic:true});
 	paper = new Paper(100, 200, 50, "paper.png");
 	
 
@@ -40,7 +40,7 @@ function draw() {
 
   
   go.display();
-  bin.display();	
+  Emptybin.display();	
   paper.display();
 
 }
