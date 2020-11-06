@@ -4,11 +4,11 @@ class Paper{
     var opitions = {
         isStatic:false,
         restitution:0.3,
-        friction:0.5,
+        friction:2,
         density:1
     }
     this.image = loadImage("paper.png");
-    this.body = Bodies.circle(x, y, radius/2, opitions);
+    this.body = Bodies.circle(x, y, radius/3, opitions);
     this.radius = radius;
     World.add(world,this.body)
 

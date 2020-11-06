@@ -25,7 +25,7 @@ function setup() {
 	//Create the Bodies Here.
 
 	go = new ground(750, 680, 1500, 20, {isStatic:true});
-	Emptybin = new Dustbin(1200, 590, {isStatic:true});
+	Emptybin = new Dustbin(1200, 600, 160, 20, {isStatic:true});
 	paper = new Paper(100, 200, 50, "paper.png");
 	
 
@@ -47,6 +47,6 @@ function draw() {
 
 function keyPressed() {
 	if(keyCode === UP_ARROW) {
-		Matter.Body.applyForce(paper.body, paper.body.position, {x : 120, y : -135}) 
+		Matter.Body.applyForce(paper.body, paper.body.position, {x : 50, y : -65}) 
 	}
 }
